@@ -1,0 +1,29 @@
+{
+  "name": "catch-music",
+  "version": "1.0.0",
+  "description": "React, Express, Babel.  Yep",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "node ./node_modules/.bin/browserify -t [ babelify --presets [ react ] ] ./app.js -o ./public/build/js/bundle.js",
+    "build:css": "node ./node_modules/.bin/node-sass ./sass/styles.scss -o ./public/build/css/ --source-map true --include-path ./node_modules && node ./node_modules/.bin/postcss --use autoprefixer --autoprefixer.browsers 'IE 11, > 1%' ./public/build/css/styles.css -d ./public/build/css/ && date +'Built: %T'",
+    "build": "npm run build:css && npm run build:js",
+    "start": "node index.js"
+  },
+  "author": "Stuart Wilson <s.wilson@catchdigital.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "catchify": "github:catchdigital/catchify",
+    "express": "^4.14.1",
+    "express-react-views": "^0.10.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "node-sass": "^4.5.0",
+    "postcss-cli": "^3.0.0-beta"
+  }
+}
