@@ -11,8 +11,8 @@ n 6.0.0
 
 ## Getting started
 ```
-git clone REPO
-cd DIR
+git clone git@github.com:catchdigital/catch-music.git
+cd catch-music
 npm install
 npm run build
 npm start
