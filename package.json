@@ -18,8 +18,10 @@
     "catchify": "github:catchdigital/catchify",
     "express": "^4.14.1",
     "express-react-views": "^0.10.2",
+    "node-sonos": "^0.12.4",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "slackbots": "^1.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.5",
